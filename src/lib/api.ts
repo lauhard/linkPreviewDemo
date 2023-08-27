@@ -7,7 +7,7 @@ type Meta = {
 }
 export const  GET =  async (fetch: typeof globalThis.fetch, url:string) =>{
     console.log("GET", url);
-    const response = await fetch(url);
+    const response = await fetch(url,{mode: 'no-cors', headers: { 'Content-Type': 'text/html' }, method: 'GET'});
     const html = await response.text();
     console.log("html", html);
     const doc = new DOMParser().parseFromString(html, "text/html");

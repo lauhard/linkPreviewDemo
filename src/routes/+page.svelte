@@ -19,7 +19,7 @@
 <p>
     Visit 
     <a on:mouseenter={ linkPreview }
-        href="https://mdn.com/">
+        href="https://lisaloof.com/">
         kit.svelte.dev
     </a> 
     to read the documentation
